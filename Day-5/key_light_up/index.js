@@ -3,6 +3,8 @@ const COLOR = 'rgb(128, 128, 255)'
 document.body.style.fontFamily = "sans-serif";  
 window.addEventListener("keydown",colorDevsnest);
 let listOfLetters = document.querySelectorAll(".letter");
+
+// function created to select the key pressed and apply text color changes through this function
 function colorDevsnest(event){
   let letter = event.key.toUpperCase();
   for(let item of listOfLetters){
